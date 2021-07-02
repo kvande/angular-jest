@@ -2,8 +2,8 @@
 describe("App-component",() => {
   
   it('should be true', () => {
-
-    expect(true).toBeTruthy();
+    const a = false;
+    expect(a).toBeTruthy();
 
   })
 
