@@ -8,27 +8,27 @@
 		}
 	],
 	"settings": {},
+    
 	"launch": {
 		"version": "0.2.0",
+        // this is the setup when using debug from the vs-code-extension: orta.vscode-jest
 		"configurations": [
-		
-			{
-				"type": "node",
-				"name": "vscode-jest-tests",
-				"request": "launch",
-				"args": [
-					"--runInBand",
-					"--watchAll=false"
-				],
-				"cwd": "${workspaceFolder}",
-				"console": "integratedTerminal",
-				"internalConsoleOptions": "neverOpen",
-				"disableOptimisticBPs": true,
-				"program": "${workspaceFolder}/node_modules/.bin/jest",
-				"windows": {
-					"program": "${workspaceFolder}/node_modules/jest/bin/jest"
-				}
-			}
-		]
+            {
+                "type": "node",
+                "name": "vscode-jest-tests",
+                "request": "launch",
+                "console": "integratedTerminal",
+                "internalConsoleOptions": "neverOpen",
+                "disableOptimisticBPs": true,
+                "program": "node_modules/.bin/jest",
+                "cwd": "${workspaceFolder}/../../",
+                "args": [
+                    "--config",
+                    "jest-config.json",
+                    "--runInBand",
+                    "--watchAll=false"
+                ]
+            }
+        ]
 	}
 }

@@ -1,3 +1,4 @@
 {
-    "testMatch": ["**/+(*.)+(spec).+(ts)"] 
+    "testMatch": ["**/+(*.)+(spec).+(ts)"],
+    "roots": ["./"]
 }
