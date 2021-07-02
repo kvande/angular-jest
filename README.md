@@ -1,7 +1,6 @@
 # How to get this thing`y going:
 
-To avoid having a .vscode/launch.json file in every top level of a multi root workspace (here: only one, but you get the point),  
-add the 'launch' config as shown below.
+To avoid having a .vscode/launch.json file in every top level of a multi root workspace (here: only one, but you get the point), add the 'launch' config section as shown below to the workspace file:  
 
 
 ```{
